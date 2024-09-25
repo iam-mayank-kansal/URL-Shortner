@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 70px;
+        }
+
+        button {
+            padding: 20px 40px;
+            font-size: 25px;
+            font-weight: 500;
+            background-color: #0ccc6c;
+            cursor: pointer;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Welcome to URL Shortener</h1>
+        <form action="http://localhost:3000/urlPage" method="GET">
+            <button type="submit">Get Started</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

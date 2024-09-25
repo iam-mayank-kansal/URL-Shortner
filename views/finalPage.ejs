@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short ID</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 70px;
+        }
+
+        button {
+            padding: 20px 40px;
+            font-size: 25px;
+            font-weight: 500;
+            background-color: #0ccc6c;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        h3{
+            background-color: #0ccc6c; 
+            color: white;
+            padding: 20px 40px;
+
+        }
+        h3 span{
+            border: 2px solid white;
+            padding: 8px 15px ;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Your Shortened URL</h1>
+        <a>
+            <h3>Your URL : <span> <%= shortId %></span></h3>
+        </a>
+        <a href="/">
+            <h3>Go back to HomePage</h3>
+        </a>
+
+    </div>
+</body>
+
+</html>
